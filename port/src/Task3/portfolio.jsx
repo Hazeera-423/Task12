@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './portfolio.css'; 
 
-const App3= () => {
+const App31= () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -24,27 +24,17 @@ const App3= () => {
         {/* Aside */}
         
 
-        {/* Main content - Contact Form */}
+       
         <main className="main-section">
           <h2>Contact Us</h2>
           <form onSubmit={handleSubmit}>
             <div className="input-group">
               <label>Name:</label>
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
+              <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
             </div>
             <div className="input-group">
               <label>Email:</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
+              <input  type="email"  value={email}  onChange={(e) => setEmail(e.target.value)}  required/>
             </div>
             <div className="input-group">
               <label>Message:</label>
@@ -72,4 +62,4 @@ const App3= () => {
   );
 };
 
-export default App3;
+export default App31;
