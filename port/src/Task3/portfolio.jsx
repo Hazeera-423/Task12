@@ -17,34 +17,33 @@ const App3= () => {
 
   return (
     <div className="app">
-      {/* Header */}
-     
+    
+      <header>
+        <h1>My Portfolio</h1>
+      </header>
+
 
       <div className="main-content">
-        {/* Aside */}
+       
         
 
-        {/* Main content - Contact Form */}
+      <aside>
+            
+            <h3>About Me</h3>
+            <p>This is where you can add information about yourself, your career, and your skills.</p>
+            <img src='/pic1.jpg' alt='pic' style={{height:200 , width:200}}/>
+          </aside>
+
         <main className="main-section">
           <h2>Contact Us</h2>
           <form onSubmit={handleSubmit}>
             <div className="input-group">
               <label>Name:</label>
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
+              <input  type="text" value={name} onChange={(e) => setName(e.target.value)} required/>
             </div>
             <div className="input-group">
               <label>Email:</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
+              <input type="email"value={email} onChange={(e) => setEmail(e.target.value)} required/>
             </div>
             <div className="input-group">
               <label>Message:</label>
